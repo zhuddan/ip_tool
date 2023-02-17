@@ -1,0 +1,4 @@
+node_modules/
+src/files
+src/output
+src/config.yaml
