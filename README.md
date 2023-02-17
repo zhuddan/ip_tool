@@ -2,6 +2,16 @@
 
 一个切换ip的脚本,主要是公司和出差内网环境需要频繁切换,太麻烦了
 
+# 运行
+  管理员权限cmd
+  把 config_demo 修改为 config 并且修改里面你需要配置的信息 
+```shell
+
+pnpm i 
+
+pnpm run dev
+
+```
 
 # 问题
 
