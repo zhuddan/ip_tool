@@ -1,5 +1,5 @@
 import { exec } from 'child_process';
-import { readFileSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
 import path from 'path';
 import YAML from 'yaml';
 import inquirer from 'inquirer';
@@ -83,7 +83,13 @@ async function test() {
       }
     });
 }
-test();
+const USER_HOME = process.env.HOME || process.env.USERPROFILE;
+console.log(USER_HOME);
+const ddd = readdirSync(USER_HOME as string);
+
+console.log(ddd);
+// test();
+
 // inquirer
 //   .prompt([
 //     {
